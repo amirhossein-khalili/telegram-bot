@@ -5,14 +5,17 @@
     "main": "api/index.ts",
     "scripts": {
         "build": "tsc",
-        "start": "tsc && node public/index.ts",
+        "start": "tsc && node dist/api/index.js",
         "dev": "nodemon src/index.ts",
         "lint": "eslint . --cache --ext .ts,.js",
         "format": "prettier --write 'src/**/*.ts'"
     },
     "author": "groot",
     "dependencies": {
-        "grammy": "^1.6.1"
+        "express": "^4.21.0",
+        "grammy": "^1.6.1",
+        "https-proxy-agent": "^7.0.5",
+        "mongoose": "^8.6.3"
     },
     "devDependencies": {
         "@types/node": "^17.0.5",
